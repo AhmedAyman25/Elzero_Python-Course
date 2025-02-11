@@ -14,4 +14,20 @@
 # print(first)
 # first.reverse()
 # print(first)
+myString = 'hello i am ahmed'
+print(myString.title())
+print(myString.capitalize())
 
+x,y,z = '1','11','111'
+print(x.zfill(4))
+print(y.zfill(4))
+print(z.zfill(4))
+
+print(myString.upper())
+print(myString.count('e'))
+
+str = "ILovePython25"
+print(str.isalnum())
+
+money = 500165968123
+print("Money in the bank: {:,.2f}".format(money))
