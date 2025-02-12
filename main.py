@@ -31,3 +31,12 @@ print(str.isalnum())
 
 money = 500165968123
 print("Money in the bank: {:,.2f}".format(money))
+myList = [1,2,8,9,5,6,3]
+print(myList)
+a =myList
+a.append(150)
+print(myList)
+a.pop()
+print(myList)
+a.pop()
+print(myList)
