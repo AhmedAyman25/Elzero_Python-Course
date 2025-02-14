@@ -40,3 +40,9 @@ a.pop()
 print(myList)
 a.pop()
 print(myList)
+print('*'*30)
+ls = [50,60,70]
+m,n,o  = ls
+print(m)
+print(n)
+print(o)
