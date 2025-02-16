@@ -46,3 +46,43 @@ m,n,o  = ls
 print(m)
 print(n)
 print(o)
+print('*'*30)
+mySet = {2,4,2,8,6,5,4,8,9,10}
+print(len(mySet)) #7
+mySet.add(7)
+print(mySet)
+#mySet.remove(80) #error because 80 not in the set
+print(mySet)
+mySet.discard(80) #looks like remove but no error
+print(mySet)
+
+mySet2 = {'A','B','C','D'}
+mySet.update(mySet2) # update = union -> looks like add but add multiple values
+print(mySet)
+mySet.union(mySet2)
+print(mySet)
+##############################################################
+set1 = {1,2,3,4,5,"Ahmed",'X',True}
+set2 = {'X',1,2,False,'Omar'}
+# difference() (set1 - set2) -> return a set that contains the difference between two sets
+print(set1.difference(set2)) # {3, 4, 5, 'Ahmed'}
+
+#difference_update() (set1 - set2) -> remove the items that exist in both sets (update the original set)
+# set1.difference_update(set2)
+# print(set1) # {3, 4, 5, 'Ahmed'}
+
+#intersection() (set1 & set2) -> return a set that contains the intersection between two sets
+print(set1.intersection(set2)) # {1, 2, 'X'}
+#intersection_update() (set1 & set2) -> update the original set with the intersection between two sets
+# set1.intersection_update(set2)
+# print(set1) # {1, 2, 'X'}
+
+#semmetric_difference() (set1 ^ set2) -> return a set that contains the symmetric difference between two sets (items that exist in one set but not in both)
+print(set1.symmetric_difference(set2)) # {3, 4, 5, 'Ahmed', False, 'Omar'}
+#symmetric_difference_update() (set1 ^ set2) -> update the original set with the symmetric difference between two sets
+# set1.symmetric_difference_update(set2)
+# print(set1) # {3, 4, 5, 'Ahmed', False, 'Omar'}
+
+#union() (set1 | set2) -> return a set that contains the union between two sets
+print(set1.union(set2)) # {1, 2, 3, 4, 5, 'Ahmed', 'Omar', 'X', False}
+
