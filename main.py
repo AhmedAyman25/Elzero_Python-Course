@@ -86,3 +86,6 @@ print(set1.symmetric_difference(set2)) # {3, 4, 5, 'Ahmed', False, 'Omar'}
 #union() (set1 | set2) -> return a set that contains the union between two sets
 print(set1.union(set2)) # {1, 2, 3, 4, 5, 'Ahmed', 'Omar', 'X', False}
 
+print('=' * 30)
+print('yes') if 10 > 5 else print('no')
+print("Hi" if 10 < 5 else "Bye")
