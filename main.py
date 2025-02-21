@@ -89,3 +89,52 @@ print(set1.union(set2)) # {1, 2, 3, 4, 5, 'Ahmed', 'Omar', 'X', False}
 print('=' * 30)
 print('yes') if 10 > 5 else print('no')
 print("Hi" if 10 < 5 else "Bye")
+print('=' * 30)
+mySkills = {
+    "Html":"90%",
+    "PHP":"80%",
+    "JS":"70%",
+    "Css":"60%",
+    "Python":"75%",
+}
+
+for skill in mySkills:
+    print(f"my progress in Lang {skill} is: {mySkills[skill]}")
+print('='*30)
+
+for key,value in mySkills.items():
+    print(f"{key} => {value}")
+
+print('='*30)
+peoples  = {
+    "Ahmed" :{
+        "html":"80%",
+        "css":"90%",
+        "js":"70%",
+        "php":"60%",
+    },
+
+    "Omar" :{
+        "html":"60%",
+        "css":"70%",
+        "js":"90%",
+        "php":"80%",
+    },
+    "Ali" :{
+        "html":"70%",
+        "css":"60%",
+        "js":"80%",
+        "php":"90%",
+    }
+}   
+
+for name in peoples:
+    print(name)
+    for skill in peoples[name]:
+        print(skill, " -> ",peoples[name][skill])
+
+print('='*30)
+for pepoles_Key, peoples_value in peoples.items():
+    print(f"{pepoles_Key} progress is: ")
+    for lang_key, lang_value in peoples_value.items():
+        print(f"{lang_key} => {lang_value}")
