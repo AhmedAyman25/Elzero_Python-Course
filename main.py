@@ -138,3 +138,33 @@ for pepoles_Key, peoples_value in peoples.items():
     print(f"{pepoles_Key} progress is: ")
     for lang_key, lang_value in peoples_value.items():
         print(f"{lang_key} => {lang_value}")
+print('='*30)
+
+def show_datails(* skills):
+    print("Your Skills are : ")
+    for skill in skills:
+        print(skill)
+
+show_datails("Html","js","algorithms")
+
+print('*'*30)
+# Recursion
+def cleanWord(word): #AAhmmmeeeddd
+    if len(word) == 1:
+        return word
+    
+    if word[0] == word[1]:
+        return cleanWord(word[1:])
+    return word[0] + cleanWord(word[1:])
+    
+
+print(cleanWord("AAhmmmeeeddd"))
+
+####################################################
+### lambda Function = Anonymous function
+### lambda type is function
+### Syntax -> [Keyword lambda] [variables_names] [:] [block of code]
+
+hi = lambda name : f"Hi {name}"
+print(hi("Ahmed"))
+print(type(hi)) 
