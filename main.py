@@ -168,3 +168,5 @@ print(cleanWord("AAhmmmeeeddd"))
 hi = lambda name : f"Hi {name}"
 print(hi("Ahmed"))
 print(type(hi)) 
+
+print('*'*30)
