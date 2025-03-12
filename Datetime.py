@@ -74,6 +74,31 @@ MyBirthday = datetime.datetime(2000,12,16)
 CurrentDate = datetime.datetime.now()
 print(f"I Lived For : {CurrentDate - MyBirthday}")
 print(f"I Lived For : {(CurrentDate - MyBirthday).days} Days")
+print('*'*30)
 
+########################## Date Formatting ##########################
+# https://strftime.org/
+# strftime -> String Format Time
+# %Y -> Year
+# %m -> Month
+# %d -> Day
+
+print(dir(datetime.datetime))
+print('*'*30)
+
+# Format Date
+Birthday = datetime.datetime(2000,12,16)
+print(Birthday.strftime("%Y/%m/%d")) # 2000/12/16
+print(Birthday.strftime("%a")) # Sat
+print(Birthday.strftime("%A")) # Saturday
+print(Birthday.strftime("%m")) # 12
+print(Birthday.strftime("%b")) # Dec
+print(Birthday.strftime("%B")) # December
+print(Birthday.strftime("%y")) # 00
+print(Birthday.strftime("%Y")) # 2000
+
+print(Birthday.strftime("%d %B %Y")) # 16 December 2000
+print(Birthday.strftime("%d-%b-%Y")) # 16-Dec-2000
+print(Birthday.strftime("%d-%m-%Y")) # 16-12-2000
 
 
