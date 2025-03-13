@@ -170,3 +170,32 @@ print(hi("Ahmed"))
 print(type(hi)) 
 
 print('*'*30)
+
+#-----------------------------
+#----- Iterable vs Iterator
+#-----------------------------
+# Iterable -> is an object that contains a collection of items (list, tuple, set, dictionary, String)
+# Iterator -> is an object that represent a stream of data
+# iterator -> object used to iterate over iterable objects like lists, tuples, sets, and dictionaries using the iter() and next() functions
+# iter() -> return an iterator object
+# next() -> return the next item in the iterable object
+# StopIteration -> raised when the next() function reaches the end of the iterable object
+# you can generate an iterator from an iterable object using the iter() function
+
+myList = [1,2,3,4,5]
+myIter = iter(myList)
+print(next(myIter)) #1
+print(next(myIter)) #2
+
+print('*'*30)
+
+#------------------- For loop generate an iterator automatically -------------------
+for letter in "Ahmed":
+    print(letter)
+
+print('*'*30)
+
+for letter in iter("Ahmed"):
+    print(letter)
+#------------------------------------------------------------------------------------
+print('*'*30)
