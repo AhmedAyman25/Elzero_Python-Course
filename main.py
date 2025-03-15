@@ -199,3 +199,15 @@ for letter in iter("Ahmed"):
     print(letter)
 #------------------------------------------------------------------------------------
 print('*'*30)
+frozenSet = frozenset('aabbss')
+print(type(frozenSet))
+
+def Fun():
+    ''' this is the describtion of the function'''
+    pass
+
+print(Fun.__doc__)
+help(Fun)
+
+
+

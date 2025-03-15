@@ -101,4 +101,34 @@ print(Birthday.strftime("%d %B %Y")) # 16 December 2000
 print(Birthday.strftime("%d-%b-%Y")) # 16-Dec-2000
 print(Birthday.strftime("%d-%m-%Y")) # 16-12-2000
 
+print("*"*30)
+def get_n_days_after_date(dateFormat = "%d %m %Y", add_dayes = 120):
 
+    date_n_days_after = datetime.datetime.now() + datetime.timedelta(days = add_dayes)
+    return date_n_days_after.strftime(dateFormat)
+
+print(get_n_days_after_date(add_dayes= 100))
+
+# to find the amount of time between dates or determine what the date will be tomorrow. This can be accomplished using timedelta objects
+
+today = datetime.date.today()
+print('Today:', today)
+yesterday = today - datetime.timedelta(days=1)
+print('Yesterday:', yesterday)
+tomorrow = today + datetime.timedelta(days=1)
+print('Tomorrow:', tomorrow)
+print('Time between tomorrow and yesterday:', tomorrow - yesterday)
+
+# Fuzzy datetime parsing (extracting datetime out of a text)
+# it is possible to extract a date out of a text using the dateutil parser in a "fuzzy" mode
+from dateutil.parser import parse
+dateTime = parse("Today is January 1, 2047 at 8:21:00AM", fuzzy=True)
+print(dateTime)
+
+# Iterate Over Dates
+day_delta = datetime.timedelta(days=1)
+start_date = datetime.datetime.now()
+end_date = start_date + 7 * day_delta
+
+for date in range((end_date - start_date).days):
+    print(start_date + date * day_delta)
