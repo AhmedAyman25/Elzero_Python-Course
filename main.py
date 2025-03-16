@@ -208,6 +208,7 @@ def Fun():
 
 print(Fun.__doc__)
 help(Fun)
+print('*'*30)
 
 
 
