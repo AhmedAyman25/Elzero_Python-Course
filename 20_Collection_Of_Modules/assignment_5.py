@@ -1,3 +1,5 @@
+# install pylint if not installed
+# write in terminal -> pip install pylint
 """
         This is my Own Module
         This Module Contains One Function
