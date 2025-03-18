@@ -1,5 +1,5 @@
 my_list = [1,2,3,4,5]
-my_dic = {"name":"Ahmed", "age":24, "countr":"Egypt"}
+my_dic = {"name":"Ahmed", "age":24, "country":"Egypt"}
 
 for item in my_list:
     print(item)
