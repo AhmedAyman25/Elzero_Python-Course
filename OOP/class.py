@@ -20,6 +20,8 @@
 
 # class attributes -> attributes defined outside the constructor
 # class methods -> Take cls as the first parameter which refers to the class
+# class methods marked with @classmethod decorator
+# don't need to create an object to access class attributes and methods
 
 
 class Car:
@@ -42,6 +44,10 @@ class Car:
         else:
             return f"Car Name: {self.name} Car Color: {self.color} Car Model: {self.model}"
     
+    # class method
+    @classmethod
+    def get_car_count(cls):
+        return f"Car Count: {cls.car_count}"
 
 # Create instances        
 bmw = Car("BMW","Red","2020")
@@ -56,5 +62,5 @@ mg = Car("MG","White","2022")
 # print(kia.name,kia.color,kia.model)
 # print(mg.name,mg.color,mg.model)
 # print(kia.__class__)
-
+print(Car.get_car_count())
 print(Car.car_count)
