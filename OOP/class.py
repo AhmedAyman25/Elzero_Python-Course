@@ -23,6 +23,9 @@
 # class methods marked with @classmethod decorator
 # don't need to create an object to access class attributes and methods
 
+#static methods -> don't take any special parameters
+# static methods are used to group related functions together
+# static methods are used to create utility functions that don't need to access the class or instance
 
 class Car:
     # class attributes
@@ -49,6 +52,11 @@ class Car:
     def get_car_count(cls):
         return f"Car Count: {cls.car_count}"
 
+    # static method
+    @staticmethod
+    def say_hello():
+        return "Hello"
+    
 # Create instances        
 bmw = Car("BMW","Red","2020")
 kia = Car("KIA","Black","2021")
@@ -64,3 +72,4 @@ mg = Car("MG","White","2022")
 # print(kia.__class__)
 print(Car.get_car_count())
 print(Car.car_count)
+print(Car.say_hello())
