@@ -31,6 +31,6 @@ dog1.name = "Charlie"
 print(dog1.name)     # (Updated instance variable)
 
 # Modify class variable
-Dog.species = "Feline"
+Dog.species = "Feline" # affects all objects, as it’s a property of the class itself
 print(dog1.species)  # (Updated class variable)
 print(dog2.species)
