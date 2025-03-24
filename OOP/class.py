@@ -1,3 +1,12 @@
+"""
+Classes and objects provide a way to model real-world entities and abstract concepts in code.
+ They promote code organization, encapsulation (data hiding), inheritance (code reuse), 
+ and polymorphism (method overriding), making complex systems easier to manage and extend.
+
+"""
+
+
+
 # Class is the Blueprint or template for creating objects
 # It defines attributes(data) and mathods(behaviors) that the objects of that class will have
 # Classes provide a means of bundling data and functionality together
