@@ -42,3 +42,7 @@ class C(A):
 
 obj = C()
 obj.do_something()
+
+
+class s(object):
+    pass
