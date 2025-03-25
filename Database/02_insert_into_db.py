@@ -18,9 +18,16 @@ cursor.execute('CREATE TABLE IF NOT EXISTS users(user_id INT,name TEXT)')
 
 # Inserting data into users table
 
-cursor.execute('INSERT INTO users(user_id,name ) VALUES(1,"Ahmed")')
-cursor.execute('INSERT INTO users(user_id,name ) VALUES(2,"Mohammed")')
-cursor.execute('INSERT INTO users(user_id,name ) VALUES(3,"Ali")')
+# cursor.execute('INSERT INTO users(user_id,name ) VALUES(1,"Ahmed")')
+# cursor.execute('INSERT INTO users(user_id,name ) VALUES(2,"Mohammed")')
+# cursor.execute('INSERT INTO users(user_id,name ) VALUES(3,"Ali")')
+
+# Inserting the list of names into users table
+
+names =  ["Othman", "Mahmoud", "Sayed","Ayman","Mona","Abdo","Waleed"]
+
+for id,user in enumerate(names,start = 4):
+    cursor.execute(f"INSERT INTO users VALUES({id},'{user}')")
 
 # Save (commit) all changes
 database.commit()
